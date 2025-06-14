@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    background-color: black;
+}
+
+/* === HEADER E MENU === */
+.cab {
+    background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+}
+
+
+.thumb {
+    background-image: url('https://www.qpontos.com.br/wp-content/uploads/2024/01/nathon-oski-EW_rqoSdDes-unsplash-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    /* capa preta transparente */
+    background-blend-mode: darken;
+    /* OU multiply, overlay, etc */
+}
+
+
+.logo,
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.logo img {
+    height: 60px;
+    width: 70px;
+    padding: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    color: rgb(231, 165, 95);
+    border-bottom: 2px solid rgb(231, 165, 95);
+}
+
+/* === SEÇÃO PRINCIPAL === */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    padding: 0 60px;
+    gap: 60px;
+}
+
+/* Texto do slogan */
+.text {
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.slogan {
+    font-size: 60px;
+}
+
+.logo h1:hover {
+    color: rgb(231, 165, 95);
+}
+
+.slogan2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.slogan2:hover {
+    font-weight: 300;
+}
+
+.luz {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.luz:hover {
+    color: rgb(231, 165, 95);
+}
+
+/* Botão */
+button {
+    margin-top: 40px;
+    height: 60px;
+    width: 300px;
+    background-color: rgb(185, 130, 72);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(161, 107, 51);
+}
+
+/* Imagem */
+.pic {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.pic img {
+    height: 600px;
+    width: auto;
+    object-fit: contain;
+}
+
+.container {
+    width: 100%;
+}
+
+.comunicação {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agenda img {
+    height: 100px;
+    margin-bottom: 15px;
+    width: 100px;
+    align-self: center;
+}
+
+.agenda h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.agenda h2 {
+    font-size: 15px;
+    text-align: center;
+    color: #a09d9d;
+    margin-top: 10px;
+}
+
+.agenda button {
+    align-self: center;
+}
+
+.p2 {
+    background-color: #131212;
+    height: 450px;
+    margin-top: -99px;
+}
+
+.borderline {
+    background-color: rgb(99, 96, 96);
+    width: 2px;
+    height: 400px;
+}
+
+/* Catalogo */
+
+
+.cat {
+    height: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://www.qpontos.com.br/wp-content/uploads/2024/01/nathon-oski-EW_rqoSdDes-unsplash-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+}
+
+.icon img {
+    height: 380px;
+    margin-bottom: -45px;
+}
+
+.cat li {
+    margin: 25px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #a09d9d;
+}
+
+.cat h1 {
+    font-size: 35px;
+}
+
+.cat li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.cat li:hover {
+    color: white;
+}
+
+/* GALERIA DE FOTOS */
+.galeria {
+    background-color: #1d1d1d;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.foto {
+    aspect-ratio: 1 / 1;
+    /* mantém quadrado */
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.foto img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+.galeria h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(134, 130, 130);
+    margin-bottom: -25px;
+}
+
+.galeria h1:hover {
+    color: white;
+}
+
+.redes {
+    text-align: center;
+    padding: 2rem;
+    background-color: #3a3939;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icones img {
+    margin: 15px;
+    width: 35px;
+
+}
+
+.icones img:hover {
+    background-color: aliceblue;
+    border: 2px white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+h3 {color: white; text-decoration: none; font-size: 10px; text-align: center; }
+h3 a {color: aliceblue;}
+
+@media (max-width: 1200px) {
+
+    section {
+        height: auto;
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .pic {
+        display: none !important;
+    }
+
+    .thumb {
+        margin-bottom: 7%;
+    }
+
+    .text,
+    .pic {
+        width: 100%;
+    }
+
+    .pic img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .foto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cab {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .slogan2 {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    button {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .agenda h1 {
+        font-size: 20px;
+    }
+
+    .agenda h2 {
+        font-size: 14px;
+    }
+
+    .borderline {
+        display: none;
+    }
+
+    .foto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cat li {
+        font-size: 20px;
+    }
+
+    .cat h1 {
+        font-size: 28px;
+    }
+
+    .icon img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 60px;
+    }
+
+    .menu li {
+        font-size: 14px;
+    }
+
+    .slogan {
+        font-size: 32px;
+    }
+
+    .slogan2 {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .icones img {
+        width: 24px;
+        margin: 10px;
+    }
+
+    .foto-grid {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
