@@ -386,7 +386,7 @@ h3 a {color: aliceblue;}
 
 @media (max-width: 768px) {
     .slogan {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     button {
@@ -400,7 +400,8 @@ h3 a {color: aliceblue;}
     .text {
         font-size: 18px;
     }
-
+  header ul{display: none !important; }
+  .thumb button{margin-bottom: 15px;}
     button {
         width: 80%;
         height: 50px;
